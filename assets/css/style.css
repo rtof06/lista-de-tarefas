@@ -1,0 +1,66 @@
+:root {
+   --primary-color: #ebebeb;
+   --selected: #9de8ff;
+   --button: #e0e0e0;
+}
+
+* {
+   box-sizing: border-box;
+   outline: 0;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   background: var(--primary-color)
+}
+
+.container {
+   max-width: 640px;
+   background: #FFF;
+   padding: 1em;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.3rem;
+   line-height: 1.5em;
+   border-radius: 10px;
+   width: 100dvw;
+   margin: 25dvh;
+}
+
+.add-task-button {
+   border: none;
+   background-color: var(--button);
+   color: #000;
+   font-size: 18px;
+   font-weight: 700;
+   padding: .3em;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.add-task-button:hover {
+   opacity: 80%;
+}
+
+.new-task {
+   margin: 1em 0;
+   font-size: 1rem;
+}
+
+.new-task:focus {
+   outline: 1px solid var(--selected);
+}
+
+.task-list {
+   padding-left: 1em;
+}
+
+.task {
+   display: none;
+   padding-top: .5em;
+   margin-top: 1em;
+   border-top: 2px solid var(--primary-color);
+   text-align: left;
+}
